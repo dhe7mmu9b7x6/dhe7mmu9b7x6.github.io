@@ -1,0 +1,1857 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>糖心安安老师 - 品牌官方视频门户,用影像记录温柔成长</title>
+<meta name="description" content="糖心安安老师官方网站,专注温情成长与生活陪伴的原创影像品牌,汇集精品视频内容、创作者社区与企业动态,持续运营可信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8a0b4'/%3E%3Cpath d='M20 18h24v6H20zM20 30h18v6H20zM20 42h24v6H20z' fill='%23fff5f8'/%3E%3Ccircle cx='48' cy='48' r='9' fill='%237a3f55'/%3E%3Cpath d='M45 44l8 4-8 4z' fill='%23fff5f8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tx-rose:#e8a0b4;
+  --tx-rose-deep:#c9708c;
+  --tx-plum:#7a3f55;
+  --tx-plum-dark:#4d2333;
+  --tx-cream:#fdf6f8;
+  --tx-lilac:#c8b6e2;
+  --tx-lilac-soft:#ece4f6;
+  --tx-ink:#3a2b31;
+  --tx-muted:#7d6a72;
+  --tx-line:#efdbe3;
+  --tx-white:#ffffff;
+  --tx-shadow:0 14px 40px rgba(122,63,85,.12);
+  --tx-shadow-sm:0 6px 18px rgba(122,63,85,.08);
+  --tx-radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  color:var(--tx-ink);
+  background:var(--tx-cream);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+section{scroll-margin-top:118px}
+
+/* ============ 公告条 + 页头 吸顶 ============ */
+.tx-sticky-head{
+  position:sticky;top:0;z-index:100;
+}
+.tx-announce{
+  background:linear-gradient(90deg,var(--tx-plum),var(--tx-rose-deep) 55%,var(--tx-plum));
+  color:#fff4f8;
+  font-size:13.5px;
+  padding:9px 18px;
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  flex-wrap:wrap;
+  text-align:center;
+}
+.tx-announce b{
+  background:rgba(255,255,255,.18);
+  border-radius:999px;
+  padding:1px 10px;
+  font-weight:600;
+  letter-spacing:.5px;
+  white-space:nowrap;
+}
+.tx-announce-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.tx-announce-links a{text-decoration:underline;text-underline-offset:3px;opacity:.92}
+.tx-announce-links a:hover{opacity:1}
+
+.tx-header{
+  background:rgba(253,246,248,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--tx-line);
+  box-shadow:0 4px 20px rgba(122,63,85,.06);
+}
+.tx-header-inner{
+  max-width:1200px;margin:0 auto;
+  padding:12px 22px;
+  display:flex;align-items:center;gap:22px;
+}
+.tx-logo{
+  display:flex;align-items:center;gap:11px;
+  flex-shrink:0;
+}
+.tx-logo-mark{
+  width:44px;height:44px;border-radius:14px;
+  background:linear-gradient(135deg,var(--tx-rose),var(--tx-lilac));
+  display:grid;place-items:center;
+  color:#fff;font-weight:800;font-size:19px;
+  box-shadow:0 6px 16px rgba(201,112,140,.35);
+  letter-spacing:-1px;
+}
+.tx-logo-text{display:flex;flex-direction:column;line-height:1.25}
+.tx-logo-text strong{font-size:17px;letter-spacing:.5px;color:var(--tx-plum-dark)}
+.tx-logo-text span{font-size:11px;color:var(--tx-muted);letter-spacing:1.5px}
+.tx-nav{
+  display:flex;align-items:center;gap:4px;
+  margin-left:auto;
+  flex-wrap:wrap;
+}
+.tx-nav a{
+  font-size:14.5px;color:var(--tx-ink);
+  padding:7px 13px;border-radius:999px;
+  transition:.22s;
+  white-space:nowrap;
+}
+.tx-nav a:hover{background:var(--tx-lilac-soft);color:var(--tx-plum)}
+.tx-nav a.is-active{background:var(--tx-plum);color:#fff5f8}
+.tx-header-tools{display:flex;align-items:center;gap:10px}
+.tx-search{
+  display:flex;align-items:center;gap:6px;
+  background:#fff;
+  border:1px solid var(--tx-line);
+  border-radius:999px;
+  padding:6px 8px 6px 15px;
+  transition:.25s;
+}
+.tx-search:focus-within{border-color:var(--tx-rose);box-shadow:0 0 0 4px rgba(232,160,180,.18)}
+.tx-search input{
+  border:none;outline:none;background:transparent;
+  font-size:14px;color:var(--tx-ink);width:140px;
+}
+.tx-search input::placeholder{color:#b7a3ab}
+.tx-search button{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--tx-rose);
+  color:#fff;display:grid;place-items:center;
+  transition:.22s;flex-shrink:0;
+}
+.tx-search button:hover{background:var(--tx-rose-deep)}
+.tx-nav-toggle{
+  display:none;
+  width:42px;height:42px;border-radius:12px;
+  background:var(--tx-lilac-soft);
+  color:var(--tx-plum);
+  font-size:20px;
+  place-items:center;
+}
+.tx-search-feedback{
+  max-width:1200px;margin:0 auto;padding:0 22px 10px;
+  font-size:13px;color:var(--tx-rose-deep);
+  min-height:0;
+  transition:.25s;
+}
+.tx-search-feedback.is-on{padding-top:6px;min-height:24px}
+
+/* ============ 通用容器 ============ */
+.tx-wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+.tx-section{padding:64px 0}
+.tx-section-head{margin-bottom:34px;max-width:780px}
+.tx-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:2px;color:var(--tx-rose-deep);
+  font-weight:700;text-transform:uppercase;
+  background:#fff;border:1px solid var(--tx-line);
+  padding:4px 14px;border-radius:999px;
+  margin-bottom:14px;
+}
+.tx-eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--tx-rose)}
+h2.tx-h2{
+  font-size:clamp(24px,3vw,33px);
+  line-height:1.35;color:var(--tx-plum-dark);
+  letter-spacing:.5px;
+}
+.tx-section-desc{margin-top:12px;color:var(--tx-muted);font-size:15px}
+
+/* ============ 首屏 ============ */
+.tx-hero{
+  position:relative;
+  background:
+    radial-gradient(circle at 12% 20%,rgba(200,182,226,.35),transparent 42%),
+    radial-gradient(circle at 88% 8%,rgba(232,160,180,.32),transparent 46%),
+    linear-gradient(180deg,#fff 0%,var(--tx-cream) 100%);
+  padding:56px 0 20px;
+  overflow:hidden;
+}
+.tx-hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:48px;
+  align-items:center;
+}
+.tx-hero-copy{max-width:600px}
+.tx-hero-badges{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.tx-badge{
+  font-size:12px;font-weight:600;
+  padding:4px 12px;border-radius:999px;
+  background:#fff;border:1px solid var(--tx-line);
+  color:var(--tx-plum);
+  letter-spacing:.5px;
+}
+.tx-badge.is-solid{background:var(--tx-plum);color:#fff5f8;border-color:var(--tx-plum)}
+h1.tx-h1{
+  font-size:clamp(32px,4.6vw,50px);
+  line-height:1.18;
+  color:var(--tx-plum-dark);
+  letter-spacing:1px;
+  margin-bottom:18px;
+}
+h1.tx-h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--tx-rose-deep),var(--tx-lilac));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.tx-hero-lead{
+  font-size:16.5px;color:var(--tx-ink);
+  margin-bottom:14px;
+}
+.tx-hero-intro{
+  font-size:14.6px;color:var(--tx-muted);
+  text-align:justify;
+  margin-bottom:26px;
+}
+.tx-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.tx-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 26px;border-radius:999px;
+  font-size:15px;font-weight:600;
+  transition:.25s;
+}
+.tx-btn-primary{
+  background:linear-gradient(135deg,var(--tx-rose-deep),var(--tx-plum));
+  color:#fff7fa;
+  box-shadow:0 10px 26px rgba(201,112,140,.34);
+}
+.tx-btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(201,112,140,.42)}
+.tx-btn-ghost{
+  background:#fff;color:var(--tx-plum);
+  border:1.5px solid var(--tx-line);
+}
+.tx-btn-ghost:hover{border-color:var(--tx-rose);background:#fff5f8}
+.tx-hero-stats{
+  display:flex;gap:34px;flex-wrap:wrap;
+  padding-top:22px;border-top:1px dashed var(--tx-line);
+}
+.tx-stat strong{
+  display:block;font-size:26px;color:var(--tx-plum-dark);
+  line-height:1.1;letter-spacing:-.5px;
+}
+.tx-stat span{font-size:12.5px;color:var(--tx-muted);letter-spacing:.5px}
+
+.tx-hero-visual{position:relative}
+.tx-hero-frame{
+  border-radius:26px;overflow:hidden;
+  box-shadow:var(--tx-shadow);
+  border:6px solid #fff;
+  background:#fff;
+}
+.tx-hero-frame img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.tx-hero-float{
+  position:absolute;left:-18px;bottom:-22px;
+  background:#fff;border-radius:18px;
+  padding:14px 18px;
+  box-shadow:var(--tx-shadow);
+  display:flex;align-items:center;gap:12px;
+  max-width:270px;
+}
+.tx-hero-float .tx-avatar{width:42px;height:42px;font-size:15px}
+.tx-hero-float b{display:block;font-size:14px;color:var(--tx-plum-dark)}
+.tx-hero-float small{font-size:12px;color:var(--tx-muted)}
+
+/* 头像 */
+.tx-avatar{
+  width:46px;height:46px;border-radius:50%;
+  display:grid;place-items:center;
+  font-weight:700;color:#fff;font-size:16px;
+  flex-shrink:0;
+  letter-spacing:.5px;
+}
+.tx-av-a{background:linear-gradient(135deg,#e8a0b4,#c9708c)}
+.tx-av-b{background:linear-gradient(135deg,#c8b6e2,#8f74c4)}
+.tx-av-c{background:linear-gradient(135deg,#f2b6a0,#d97b63)}
+.tx-av-d{background:linear-gradient(135deg,#9fc6d8,#5d97b3)}
+.tx-av-e{background:linear-gradient(135deg,#b3d9b0,#6aa86c)}
+.tx-av-f{background:linear-gradient(135deg,#f0c76e,#c99a2e)}
+
+/* ============ 品牌解析长文 ============ */
+.tx-insight{
+  background:#fff;
+  border-radius:28px;
+  border:1px solid var(--tx-line);
+  box-shadow:var(--tx-shadow-sm);
+  padding:46px clamp(22px,4vw,56px);
+}
+.tx-insight h2{margin-bottom:10px}
+.tx-insight-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;margin-top:26px;
+}
+.tx-insight-block h3{
+  font-size:17px;color:var(--tx-plum);
+  margin-bottom:9px;
+  display:flex;align-items:center;gap:9px;
+}
+.tx-insight-block h3::before{
+  content:"";width:4px;height:17px;border-radius:3px;
+  background:linear-gradient(180deg,var(--tx-rose),var(--tx-lilac));
+}
+.tx-insight-block p{
+  font-size:14.4px;color:#564449;text-align:justify;
+}
+.tx-insight-full{
+  margin-top:28px;padding-top:24px;border-top:1px dashed var(--tx-line);
+}
+.tx-insight-full p{font-size:14.4px;color:#564449;text-align:justify;margin-bottom:14px}
+.tx-insight-full p:last-child{margin-bottom:0}
+
+/* ============ 焦点视频 ============ */
+.tx-focus-grid{
+  display:grid;
+  grid-template-columns:1.35fr 1fr;
+  gap:22px;
+}
+.tx-focus-main{
+  border-radius:24px;overflow:hidden;
+  position:relative;
+  background:#fff;
+  box-shadow:var(--tx-shadow);
+  border:1px solid var(--tx-line);
+}
+.tx-focus-main .tx-cover{aspect-ratio:16/9}
+.tx-focus-main .tx-focus-body{padding:20px 24px 24px}
+.tx-focus-main h3{font-size:21px;color:var(--tx-plum-dark);margin-bottom:8px}
+.tx-focus-main p{font-size:14px;color:var(--tx-muted);margin-bottom:12px}
+.tx-focus-list{display:grid;gap:16px}
+.tx-focus-item{
+  display:flex;gap:14px;
+  background:#fff;border:1px solid var(--tx-line);
+  border-radius:18px;padding:12px;
+  box-shadow:var(--tx-shadow-sm);
+  transition:.25s;
+}
+.tx-focus-item:hover{transform:translateY(-3px);border-color:var(--tx-rose)}
+.tx-focus-item .tx-cover{
+  width:130px;flex-shrink:0;border-radius:12px;aspect-ratio:16/9;
+}
+.tx-focus-item h4{font-size:15px;color:var(--tx-plum-dark);line-height:1.45;margin-bottom:6px}
+.tx-focus-item .tx-meta{font-size:12px;color:var(--tx-muted)}
+
+/* 封面卡 */
+.tx-cover{
+  position:relative;
+  border-radius:16px;
+  overflow:hidden;
+  background:var(--tx-lilac-soft);
+  aspect-ratio:16/9;
+}
+.tx-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.tx-card:hover .tx-cover img,.tx-focus-item:hover .tx-cover img,.tx-focus-main:hover .tx-cover img{transform:scale(1.045)}
+.tx-cover-tag{
+  position:absolute;left:10px;top:10px;
+  background:rgba(61,33,45,.72);
+  color:#fff0f5;font-size:11.5px;
+  padding:3px 10px;border-radius:999px;
+  backdrop-filter:blur(3px);
+  letter-spacing:.4px;
+}
+.tx-cover-play{
+  position:absolute;right:10px;bottom:10px;
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.9);
+  display:grid;place-items:center;
+  box-shadow:0 4px 12px rgba(61,33,45,.28);
+}
+.tx-cover-play svg{width:13px;height:13px;fill:var(--tx-plum)}
+.tx-cover-dur{
+  position:absolute;right:10px;top:10px;
+  background:rgba(61,33,45,.66);color:#fff;
+  font-size:11px;padding:2px 8px;border-radius:6px;
+  letter-spacing:.4px;
+}
+
+/* ============ 视频流 ============ */
+.tx-stream-tools{
+  display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px;
+}
+.tx-chip{
+  font-size:13px;padding:6px 16px;border-radius:999px;
+  background:#fff;border:1px solid var(--tx-line);color:var(--tx-muted);
+  transition:.22s;
+}
+.tx-chip:hover{border-color:var(--tx-rose);color:var(--tx-plum)}
+.tx-chip.is-active{background:var(--tx-plum);border-color:var(--tx-plum);color:#fff5f8}
+.tx-stream-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+.tx-card{
+  background:#fff;border:1px solid var(--tx-line);
+  border-radius:20px;overflow:hidden;
+  box-shadow:var(--tx-shadow-sm);
+  transition:.28s;
+  display:flex;flex-direction:column;
+}
+.tx-card:hover{transform:translateY(-5px);box-shadow:var(--tx-shadow);border-color:#f3c9d6}
+.tx-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.tx-card-body h3{font-size:16px;color:var(--tx-plum-dark);line-height:1.45;margin-bottom:8px}
+.tx-card-body p{font-size:13.3px;color:var(--tx-muted);margin-bottom:12px;flex:1}
+.tx-tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px}
+.tx-tag{
+  font-size:11.5px;color:var(--tx-rose-deep);
+  background:#fdf0f4;border-radius:6px;padding:2px 8px;
+}
+.tx-card-foot{
+  display:flex;align-items:center;gap:9px;
+  padding-top:12px;border-top:1px solid #f7e9ee;
+}
+.tx-card-foot .tx-avatar{width:32px;height:32px;font-size:12px}
+.tx-card-author{font-size:12.5px;color:var(--tx-plum);font-weight:600;flex:1;line-height:1.3}
+.tx-card-author small{display:block;font-weight:400;color:var(--tx-muted);font-size:11px}
+.tx-act{
+  display:flex;align-items:center;gap:4px;
+  font-size:12px;color:var(--tx-muted);
+  padding:4px 7px;border-radius:8px;
+  transition:.2s;
+}
+.tx-act:hover{background:#fdf0f4;color:var(--tx-rose-deep)}
+.tx-act svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7}
+.tx-act.is-liked{color:var(--tx-rose-deep)}
+.tx-act.is-liked svg{fill:var(--tx-rose);stroke:var(--tx-rose)}
+.tx-act.is-saved{color:var(--tx-plum)}
+.tx-act.is-saved svg{fill:var(--tx-plum);stroke:var(--tx-plum)}
+
+/* ============ 专题 ============ */
+.tx-special-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.tx-special{
+  position:relative;border-radius:22px;overflow:hidden;
+  min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:24px;color:#fff;
+  box-shadow:var(--tx-shadow-sm);
+  transition:.3s;
+}
+.tx-special:hover{transform:translateY(-4px);box-shadow:var(--tx-shadow)}
+.tx-special::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(61,33,45,.05) 25%,rgba(61,33,45,.82) 100%);
+}
+.tx-special > *{position:relative;z-index:1}
+.tx-special .tx-sp-cover{position:absolute;inset:0;z-index:0}
+.tx-special .tx-sp-cover img{width:100%;height:100%;object-fit:cover}
+.tx-special h3{font-size:19px;margin-bottom:7px;line-height:1.4}
+.tx-special p{font-size:13px;opacity:.9;margin-bottom:14px}
+.tx-sp-state{
+  align-self:flex-start;
+  font-size:11.5px;background:rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.4);
+  padding:3px 11px;border-radius:999px;
+  backdrop-filter:blur(4px);
+}
+.tx-special.tx-sp-wide{grid-column:span 1}
+
+/* ============ 创作者 ============ */
+.tx-creator-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.tx-creator{
+  background:#fff;border:1px solid var(--tx-line);
+  border-radius:20px;padding:22px;
+  box-shadow:var(--tx-shadow-sm);
+  transition:.26s;
+  cursor:pointer;
+}
+.tx-creator:hover{transform:translateY(-4px);border-color:#f2c3d2;box-shadow:var(--tx-shadow)}
+.tx-creator-head{display:flex;align-items:center;gap:13px;margin-bottom:13px}
+.tx-creator-head .tx-avatar{width:54px;height:54px;font-size:19px}
+.tx-creator-head b{display:block;font-size:16px;color:var(--tx-plum-dark)}
+.tx-creator-head small{font-size:12px;color:var(--tx-rose-deep)}
+.tx-creator p{font-size:13.4px;color:var(--tx-muted);margin-bottom:14px;text-align:justify}
+.tx-creator-stats{
+  display:flex;gap:20px;font-size:12.5px;color:var(--tx-muted);
+  padding-top:12px;border-top:1px dashed var(--tx-line);
+}
+.tx-creator-stats b{color:var(--tx-plum);font-size:14px;margin-right:3px}
+
+/* ============ 随笔 ============ */
+.tx-essay-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;
+}
+.tx-essay{
+  background:#fff;border-left:4px solid var(--tx-rose);
+  border-radius:0 18px 18px 0;
+  padding:24px 26px;
+  box-shadow:var(--tx-shadow-sm);
+}
+.tx-essay h3{font-size:17px;color:var(--tx-plum-dark);margin-bottom:10px;line-height:1.45}
+.tx-essay p{font-size:14px;color:#5c4a50;text-align:justify;margin-bottom:12px}
+.tx-essay .tx-essay-sign{font-size:12.5px;color:var(--tx-muted)}
+
+/* ============ 影像墙 ============ */
+.tx-wall{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-auto-rows:150px;
+  gap:14px;
+}
+.tx-wall-item{
+  border-radius:16px;overflow:hidden;position:relative;
+  box-shadow:var(--tx-shadow-sm);
+  background:var(--tx-lilac-soft);
+}
+.tx-wall-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tx-wall-item:hover img{transform:scale(1.06)}
+.tx-wall-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:22px 13px 11px;
+  background:linear-gradient(180deg,transparent,rgba(61,33,45,.78));
+  color:#fff;font-size:12.5px;
+}
+.tx-w-lg{grid-column:span 2;grid-row:span 2}
+.tx-w-md{grid-column:span 2;grid-row:span 1}
+.tx-w-sm{grid-column:span 1;grid-row:span 1}
+
+/* ============ 评价 ============ */
+.tx-review-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;
+}
+.tx-review{
+  background:#fff;border-radius:20px;
+  padding:20px 22px;
+  border:1px solid var(--tx-line);
+  box-shadow:var(--tx-shadow-sm);
+  position:relative;
+}
+.tx-review::before{
+  content:"”";position:absolute;right:18px;top:2px;
+  font-size:52px;color:#f6dfe6;line-height:1;
+  font-family:Georgia,serif;
+}
+.tx-review-stars{color:#e8a94a;font-size:13px;letter-spacing:2px;margin-bottom:9px}
+.tx-review p{font-size:13.8px;color:#564449;margin-bottom:14px;text-align:justify}
+.tx-review-foot{display:flex;align-items:center;gap:10px}
+.tx-review-foot .tx-avatar{width:34px;height:34px;font-size:12px}
+.tx-review-foot b{font-size:13px;color:var(--tx-plum-dark)}
+.tx-review-foot small{display:block;font-size:11.5px;color:var(--tx-muted)}
+
+/* ============ 动态 / 榜单 ============ */
+.tx-two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start}
+.tx-news-list{display:flex;flex-direction:column;gap:0}
+.tx-news{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:18px 0;border-bottom:1px solid var(--tx-line);
+}
+.tx-news:first-child{padding-top:0}
+.tx-news-date{
+  flex-shrink:0;width:62px;text-align:center;
+  background:#fdf0f4;border-radius:12px;padding:6px 0;
+  color:var(--tx-rose-deep);
+}
+.tx-news-date b{display:block;font-size:17px;line-height:1.2}
+.tx-news-date span{font-size:11px}
+.tx-news-body h3{font-size:15.5px;color:var(--tx-plum-dark);margin-bottom:5px}
+.tx-news-body p{font-size:13.2px;color:var(--tx-muted)}
+
+.tx-rank{
+  background:#fff;border:1px solid var(--tx-line);
+  border-radius:22px;padding:24px;
+  box-shadow:var(--tx-shadow-sm);
+}
+.tx-rank h3{font-size:18px;color:var(--tx-plum-dark);margin-bottom:16px}
+.tx-rank li{
+  display:flex;align-items:center;gap:12px;
+  padding:11px 0;border-bottom:1px dashed var(--tx-line);
+  font-size:14px;
+}
+.tx-rank li:last-child{border-bottom:none}
+.tx-rank-no{
+  width:24px;height:24px;border-radius:8px;flex-shrink:0;
+  display:grid;place-items:center;font-size:12px;font-weight:700;
+  background:#fdf0f4;color:var(--tx-rose-deep);
+}
+.tx-rank li:nth-child(1) .tx-rank-no{background:var(--tx-plum);color:#fff5f8}
+.tx-rank li:nth-child(2) .tx-rank-no{background:var(--tx-rose-deep);color:#fff}
+.tx-rank li:nth-child(3) .tx-rank-no{background:var(--tx-lilac);color:#fff}
+.tx-rank-name{flex:1;color:var(--tx-ink)}
+.tx-rank-score{font-size:12.5px;color:var(--tx-rose-deep);font-weight:600}
+
+/* ============ FAQ ============ */
+.tx-faq{display:grid;gap:12px;max-width:900px}
+.tx-faq details{
+  background:#fff;border:1px solid var(--tx-line);
+  border-radius:16px;padding:0 20px;
+  box-shadow:var(--tx-shadow-sm);
+  transition:.24s;
+}
+.tx-faq details[open]{border-color:var(--tx-rose);background:#fffafc}
+.tx-faq summary{
+  list-style:none;cursor:pointer;
+  padding:17px 0;font-size:15px;font-weight:600;
+  color:var(--tx-plum-dark);
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.tx-faq summary::-webkit-details-marker{display:none}
+.tx-faq summary::after{
+  content:"+";font-size:20px;color:var(--tx-rose-deep);font-weight:400;
+  transition:transform .25s;
+}
+.tx-faq details[open] summary::after{transform:rotate(45deg)}
+.tx-faq details p{
+  padding:0 0 18px;font-size:14px;color:#564449;text-align:justify;
+}
+
+/* ============ 投稿 / 联系 ============ */
+.tx-join{
+  background:linear-gradient(135deg,var(--tx-plum-dark),var(--tx-plum) 55%,var(--tx-rose-deep));
+  border-radius:28px;
+  padding:clamp(30px,4vw,54px);
+  color:#fff5f8;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.tx-join::before{
+  content:"";position:absolute;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,160,180,.5),transparent 70%);
+  right:-70px;top:-110px;
+}
+.tx-join-copy{position:relative;z-index:1}
+.tx-join h2{font-size:clamp(23px,2.8vw,31px);margin-bottom:12px;line-height:1.4;letter-spacing:.5px}
+.tx-join p{font-size:14.5px;opacity:.9;margin-bottom:22px;text-align:justify}
+.tx-join-forms{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:12px}
+.tx-join .tx-btn-primary{background:#fff;color:var(--tx-plum-dark);box-shadow:0 10px 26px rgba(0,0,0,.18)}
+.tx-join .tx-btn-primary:hover{box-shadow:0 14px 32px rgba(0,0,0,.24)}
+.tx-join .tx-btn-ghost{background:transparent;border-color:rgba(255,245,248,.55);color:#fff5f8}
+.tx-join .tx-btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+
+/* ============ 页脚 ============ */
+.tx-footer{
+  background:#2f1c26;color:#d9c4cd;
+  padding:52px 0 26px;margin-top:64px;
+}
+.tx-footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;
+  padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.tx-footer h4{color:#fff;font-size:15px;margin-bottom:14px;letter-spacing:.5px}
+.tx-footer p{font-size:13.2px;line-height:1.9;opacity:.82}
+.tx-footer li{font-size:13.2px;opacity:.82;margin-bottom:8px}
+.tx-footer a:hover{color:var(--tx-rose)}
+.tx-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.tx-footer-brand .tx-logo-mark{width:40px;height:40px;font-size:17px}
+.tx-footer-brand strong{color:#fff;font-size:16px}
+.tx-footer-bottom{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:22px;font-size:12.5px;opacity:.66;
+}
+
+/* ============ 弹窗 / Toast / 回顶 ============ */
+.tx-modal-mask{
+  position:fixed;inset:0;z-index:300;
+  background:rgba(47,28,38,.55);
+  backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;
+}
+.tx-modal-mask.is-open{display:flex}
+.tx-modal{
+  background:#fff;border-radius:22px;
+  max-width:480px;width:100%;
+  padding:30px 28px;
+  box-shadow:0 30px 70px rgba(47,28,38,.4);
+  animation:txPop .28s ease;
+  max-height:86vh;overflow:auto;
+}
+@keyframes txPop{from{transform:translateY(16px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.tx-modal h3{font-size:19px;color:var(--tx-plum-dark);margin-bottom:8px}
+.tx-modal-sub{font-size:13px;color:var(--tx-muted);margin-bottom:18px}
+.tx-modal-close{
+  float:right;width:32px;height:32px;border-radius:50%;
+  background:#fdf0f4;color:var(--tx-plum);font-size:17px;
+  display:grid;place-items:center;margin:-8px -6px 0 0;
+}
+.tx-modal-close:hover{background:#f8dde6}
+.tx-form-row{margin-bottom:14px}
+.tx-form-row label{display:block;font-size:13px;color:var(--tx-plum);margin-bottom:6px;font-weight:600}
+.tx-form-row input,.tx-form-row textarea{
+  width:100%;border:1px solid var(--tx-line);border-radius:12px;
+  padding:10px 14px;font-size:14px;font-family:inherit;
+  outline:none;transition:.22s;color:var(--tx-ink);background:#fffafc;
+}
+.tx-form-row input:focus,.tx-form-row textarea:focus{border-color:var(--tx-rose);box-shadow:0 0 0 4px rgba(232,160,180,.16)}
+.tx-form-row textarea{resize:vertical;min-height:86px}
+.tx-modal .tx-btn{width:100%;justify-content:center;margin-top:4px}
+.tx-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.tx-share-item{
+  flex:1;min-width:96px;text-align:center;
+  background:#fdf0f4;border-radius:14px;padding:14px 8px;
+  font-size:13px;color:var(--tx-plum);transition:.22s;
+}
+.tx-share-item:hover{background:#f8dde6}
+.tx-share-item span{display:block;font-size:20px;margin-bottom:4px}
+
+.tx-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:var(--tx-plum-dark);color:#fff5f8;
+  padding:11px 24px;border-radius:999px;font-size:14px;
+  box-shadow:0 14px 34px rgba(47,28,38,.35);
+  opacity:0;pointer-events:none;transition:.3s;z-index:400;
+  white-space:nowrap;
+}
+.tx-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+.tx-top-btn{
+  position:fixed;right:24px;bottom:30px;z-index:200;
+  width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg,var(--tx-rose-deep),var(--tx-plum));
+  color:#fff;display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(201,112,140,.4);
+  opacity:0;pointer-events:none;transform:translateY(12px);
+  transition:.3s;
+}
+.tx-top-btn.is-show{opacity:1;pointer-events:auto;transform:none}
+.tx-top-btn:hover{transform:translateY(-3px)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .tx-hero-grid{grid-template-columns:1fr;gap:38px}
+  .tx-hero-float{left:auto;right:-6px;bottom:-18px}
+  .tx-focus-grid{grid-template-columns:1fr}
+  .tx-stream-grid{grid-template-columns:repeat(2,1fr)}
+  .tx-special-grid{grid-template-columns:repeat(2,1fr)}
+  .tx-two-col{grid-template-columns:1fr}
+  .tx-join{grid-template-columns:1fr}
+  .tx-footer-grid{grid-template-columns:1fr 1fr}
+  .tx-wall{grid-template-columns:repeat(3,1fr)}
+  .tx-w-lg{grid-column:span 2}
+}
+@media (max-width:820px){
+  .tx-header-inner{padding:10px 16px;gap:12px}
+  .tx-nav-toggle{display:grid}
+  .tx-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fff;flex-direction:column;align-items:stretch;
+    padding:12px 16px 18px;gap:2px;
+    box-shadow:0 18px 30px rgba(122,63,85,.15);
+    border-bottom:1px solid var(--tx-line);
+  }
+  .tx-nav.is-open{display:flex}
+  .tx-nav a{padding:11px 14px;border-radius:10px}
+  .tx-search{display:none}
+  .tx-search.is-shown{
+    display:flex;position:absolute;left:12px;right:12px;top:calc(100% + 4px);
+    box-shadow:var(--tx-shadow-sm);z-index:2;
+  }
+  .tx-search input{width:100%}
+  .tx-stream-grid{grid-template-columns:1fr}
+  .tx-special-grid{grid-template-columns:1fr}
+  .tx-section{padding:46px 0}
+  .tx-insight{padding:32px 22px}
+  .tx-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+  .tx-w-lg{grid-column:span 2;grid-row:span 2}
+  .tx-w-md{grid-column:span 2;grid-row:span 1}
+  .tx-focus-item .tx-cover{width:112px}
+  .tx-top-btn{right:14px;bottom:18px;width:44px;height:44px}
+}
+@media (max-width:520px){
+  .tx-hero-stats{gap:20px}
+  .tx-stat strong{font-size:22px}
+  .tx-footer-grid{grid-template-columns:1fr}
+  .tx-focus-item{flex-direction:column}
+  .tx-focus-item .tx-cover{width:100%}
+  .tx-hero-float{position:static;margin-top:16px;max-width:none}
+  .tx-wall{grid-template-columns:1fr 1fr;grid-auto-rows:112px}
+  .tx-announce{font-size:12.5px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶：公告条 + 页头 ===== -->
+<div class="tx-sticky-head">
+  <div class="tx-announce">
+    <b>官方发布</b>
+    <div class="tx-announce-links">
+      <a href="#tx-news">「温柔的答案」第二季 11 月 21 日开更 · 共 8 集</a>
+      <a href="#tx-join">「冬日陪伴影像计划」投稿通道已开启</a>
+    </div>
+  </div>
+  <header class="tx-header">
+    <div class="tx-header-inner">
+      <a class="tx-logo" href="#tx-top" aria-label="糖心安安老师官网首页">
+        <span class="tx-logo-mark">糖安</span>
+        <span class="tx-logo-text">
+          <strong>糖心安安老师</strong>
+          <span>TANGXIN ANAN · 官方视频门户</span>
+        </span>
+      </a>
+      <nav class="tx-nav" id="txNav" aria-label="主导航">
+        <a href="#tx-top" class="is-active">首页</a>
+        <a href="#tx-focus">焦点内容</a>
+        <a href="#tx-stream">热门视频</a>
+        <a href="#tx-special">专题企划</a>
+        <a href="#tx-creators">创作者</a>
+        <a href="#tx-news">企业动态</a>
+        <a href="#tx-faq">帮助</a>
+        <a href="#tx-join">联系投稿</a>
+      </nav>
+      <div class="tx-header-tools">
+        <div class="tx-search" id="txSearch">
+          <input type="search" id="txSearchInput" placeholder="搜索视频 / 创作者 / 话题" aria-label="站内搜索">
+          <button type="button" id="txSearchBtn" aria-label="开始搜索">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+          </button>
+        </div>
+        <button class="tx-nav-toggle" id="txNavToggle" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="tx-search-feedback" id="txSearchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="tx-top">
+
+  <!-- ===== 首屏 ===== -->
+  <section class="tx-hero" aria-labelledby="tx-h1">
+    <div class="tx-wrap tx-hero-grid">
+      <div class="tx-hero-copy">
+        <div class="tx-hero-badges">
+          <span class="tx-badge is-solid">官方网站</span>
+          <span class="tx-badge">品牌官方</span>
+          <span class="tx-badge">原创内容</span>
+          <span class="tx-badge">高清呈现</span>
+        </div>
+        <h1 class="tx-h1" id="tx-h1">糖心安安老师</h1>
+        <p class="tx-hero-lead">把温柔讲清楚,把成长拍下来 —— 一个专注陪伴与成长的原创影像品牌。</p>
+        <p class="tx-hero-intro">
+          糖心安安老师官方网站是由糖心文化传媒持续运营的官方视频门户,以“真实、温暖、有力量”为核心主张,
+          围绕亲子成长、日常治愈、情绪陪伴、生活技巧与人物叙事产出原创高清内容。作为深耕家庭陪伴垂直领域的品牌,
+          我们相信一段视频可以成为一把钥匙:它不急着给答案,只是陪你走完从困惑到释然的那几步。
+          平台为创作者与企业搭建高品质内容生态,提供创作工具、话题企划与社区互动,让每一次真实的记录都被认真对待。
+        </p>
+        <div class="tx-hero-actions">
+          <a class="tx-btn tx-btn-primary" href="#tx-focus">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+            进入内容首映
+          </a>
+          <a class="tx-btn tx-btn-ghost" href="#tx-creators">认识创作者团队</a>
+          <button class="tx-btn tx-btn-ghost" type="button" data-tx-modal="share">分享本页</button>
+        </div>
+        <div class="tx-hero-stats">
+          <div class="tx-stat"><strong data-tx-count="1286">0</strong><span>部原创精品视频</span></div>
+          <div class="tx-stat"><strong data-tx-count="236">0</strong><span>位签约创作者</span></div>
+          <div class="tx-stat"><strong data-tx-count="48">0</strong><span>万活跃社区用户</span></div>
+        </div>
+      </div>
+      <div class="tx-hero-visual">
+        <div class="tx-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='s1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbe0e8'/%3E%3Cstop offset='0.55' stop-color='%23e9c8dc'/%3E%3Cstop offset='1' stop-color='%23c8b6e2'/%3E%3C/linearGradient%3E%3ClinearGradient id='s2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%237a3f55'/%3E%3Cstop offset='1' stop-color='%23c9708c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23s1)'/%3E%3Ccircle cx='640' cy='120' r='118' fill='%23fff' opacity='0.4'/%3E%3Ccircle cx='130' cy='440' r='96' fill='%23fff' opacity='0.28'/%3E%3Cpath d='M0 400 Q200 320 400 380 T800 340 V550 H0 Z' fill='%23fff' opacity='0.55'/%3E%3Crect x='228' y='150' width='344' height='232' rx='26' fill='%23fff' opacity='0.9'/%3E%3Ccircle cx='400' cy='258' r='54' fill='url(%23s2)'/%3E%3Cpath d='M382 232 L430 258 L382 284 Z' fill='%23fff'/%3E%3Crect x='278' y='330' width='244' height='12' rx='6' fill='%23e8a0b4'/%3E%3Crect x='316' y='352' width='168' height='9' rx='4.5' fill='%23c8b6e2'/%3E%3Cpath d='M96 128c0-9 7-16 16-16s16 7 16 16-7 16-16 16-16-7-16-16z' fill='%23fff' opacity='0.8'/%3E%3Cpath d='M690 430c13-9 28-9 40 0' stroke='%23fff' stroke-width='6' stroke-linecap='round' fill='none' opacity='0.7'/%3E%3C/svg%3E" alt="糖心安安老师品牌主视觉:粉色渐变画布上的播放标识与温柔光线">
+        </div>
+        <div class="tx-hero-float">
+          <span class="tx-avatar tx-av-a">安安</span>
+          <div>
+            <b>本季主推 · 温柔的答案</b>
+            <small>亲子成长观察纪录片 第二季</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 关键词解析长文 ===== -->
+  <section class="tx-section" aria-labelledby="tx-insight-h">
+    <div class="tx-wrap">
+      <div class="tx-insight">
+        <span class="tx-eyebrow">品牌深度解析</span>
+        <h2 class="tx-h2" id="tx-insight-h">糖心安安老师是谁:一个把“陪伴”做成内容的品牌</h2>
+        <p class="tx-section-desc">在内容供给过量的年代,糖心安安老师选择了一条更慢的路:不追热点节奏,只追真实感受。</p>
+        <div class="tx-insight-grid">
+          <div class="tx-insight-block">
+            <h3>从一次家庭录像开始</h3>
+            <p>
+              2019 年冬天,糖心安安老师还只是镜头后面那个举着手机的人。她拍下孩子第一次自己系鞋带的四十七秒,
+              拍到母亲在厨房里反复擦同一个碗。这些素材最初没有观众,却在家庭群里被转发了几十次。
+              她意识到,真正被需要的内容往往不宏大:它来自生活里被忽略的褶皱,来自一个人愿意被看见的瞬间。
+              于是“糖心安安老师”从一个个人账号,慢慢长成了一个有方法论、有创作团队、有稳定选题体系的原创影像品牌。
+            </p>
+          </div>
+          <div class="tx-insight-block">
+            <h3>为什么叫“糖心”</h3>
+            <p>
+              糖心指煮蛋时那颗半凝固的蛋黄,介于生与熟之间,柔软但成型。这正是品牌想表达的成长状态:
+              不必急着坚不可摧,允许自己处在中间地带。安安老师在多场访谈里提到,很多观众留言说
+              “看完你们的视频,我第一次觉得当个普通人也挺好”。这种反馈构成了品牌最核心的口碑资产,
+              也让团队确认:温柔不是软弱的替代词,它本身就是一种力量。
+            </p>
+          </div>
+          <div class="tx-insight-block">
+            <h3>内容生态与方法论</h3>
+            <p>
+              品牌下设四条内容线:亲子成长观察、日常治愈记录、情绪陪伴对谈、生活实用技巧。
+              每条线都有固定的叙事结构:先呈现真实困境,再给出可执行的微小行动,最后留出不下结论的余地。
+              团队坚持原创与正版素材审核,所有出镜家庭均签署授权,涉及儿童的内容必须经过双重伦理评估。
+              这套流程让糖心安安老师在垂直领域建立起值得信赖的专业形象。
+            </p>
+          </div>
+          <div class="tx-insight-block">
+            <h3>社区与创作者共赢</h3>
+            <p>
+              官方平台不是单向发布窗口,而是一个持续生长的社区。投稿通道每季度开放,新人创作者的选题会进入
+              “同行评审”环节,由资深作者给出剪辑与叙事建议。过去两年,共有 236 位创作者通过这一机制
+              发布了自己的第一部正式作品,其中 17 位成为签约作者。这种从陪伴到共赢的结构,
+              让内容生态保持多元与包容。
+            </p>
+          </div>
+        </div>
+        <div class="tx-insight-full">
+          <p>
+            从行业视角看,糖心安安老师所代表的“陪伴型内容”正在成为家庭消费决策的重要参考。用户不再只满足于
+            被逗笑或被科普,而是希望在有限的时间里获得情绪确认。品牌因此把每一条视频的时长控制在 3 至 12 分钟,
+            坚持单条只讲一件事,并在片尾提供延伸阅读与行动清单。官方发布的内容中,约 62% 来自用户真实投稿的再创作,
+            其余为品牌自制企划。这种混合供给既保证了品质下限,也保留了社区的原生温度。
+          </p>
+          <p>
+            品牌的社会责任实践同样围绕“陪伴”展开:连续三年开展乡村儿童影像教育公益项目,向 12 所小学提供
+            影像课程与设备支持;每年举办一次“温柔记录者”比赛,面向所有普通家庭开放报名,不设门槛,
+            只看是否真实。比赛收到的作品会被整理成年度影像档案,免费向公众开放。这些动作并不直接产生流量,
+            却让糖心安安老师的品牌故事拥有了更长的生命周期。
+          </p>
+          <p>
+            技术与体验层面,官网提供高清播放、专题聚合、创作者档案、话题筛选与收藏同步等基础能力,
+            并持续优化移动端阅读节奏。我们相信一个官方网站的价值不只在于展示,更在于让人愿意回来。
+            未来一年,品牌将把重心放在内容品质与社区治理上:完善创作者成长路径,强化内容审核标准,
+            让每一次上传与下载都发生在值得信赖的环境里。糖心安安老师希望成为用户首选的那个“会认真回应你”的平台,
+            这也是我们持续运营的全部理由。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 焦点内容 ===== -->
+  <section class="tx-section" id="tx-focus" aria-labelledby="tx-focus-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">焦点内容</span>
+        <h2 class="tx-h2" id="tx-focus-h">本周首映:四部值得留出时间的作品</h2>
+        <p class="tx-section-desc">由编辑部与观众共同票选,聚焦成长、亲子与日常治愈三条主线。</p>
+      </div>
+      <div class="tx-focus-grid">
+        <article class="tx-focus-main tx-card" data-tx-modal="player" data-tx-title="《温柔的答案》第二季 · 第一集:把话说完">
+          <div class="tx-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f8cdd9'/%3E%3Cstop offset='1' stop-color='%239e6fae'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23f1)'/%3E%3Ccircle cx='760' cy='150' r='150' fill='%23fff' opacity='0.22'/%3E%3Cpath d='M0 420 Q240 340 480 400 T960 380 V540 H0 Z' fill='%23fff' opacity='0.32'/%3E%3Crect x='330' y='190' width='300' height='170' rx='20' fill='%23fff' opacity='0.9'/%3E%3Ccircle cx='480' cy='275' r='44' fill='%237a3f55'/%3E%3Cpath d='M466 254 L506 275 L466 296 Z' fill='%23fff'/%3E%3C/svg%3E" alt="《温柔的答案》第二季第一集封面:粉色与紫色渐变的播放画面">
+            <span class="tx-cover-tag">品牌自制企划</span>
+            <span class="tx-cover-dur">11:24</span>
+            <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="tx-focus-body">
+            <h3>《温柔的答案》第二季 · 第一集:把话说完</h3>
+            <p>一次没有吵完的争吵,被完整记录下来。安安老师与三组家庭一起复盘“沉默三分钟”背后的情绪结构,试图找到把话说完的方式。</p>
+            <div class="tx-tag-row">
+              <span class="tx-tag">亲子成长</span><span class="tx-tag">人物访谈</span><span class="tx-tag">高清</span>
+            </div>
+            <div class="tx-card-foot">
+              <span class="tx-avatar tx-av-a">安安</span>
+              <span class="tx-card-author">糖心安安老师<small>11-18 更新 · 官方首发</small></span>
+              <button class="tx-act" type="button" data-tx-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg><span data-tx-like-num>3286</span></button>
+              <button class="tx-act" type="button" data-tx-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </article>
+        <div class="tx-focus-list">
+          <article class="tx-focus-item tx-card" data-tx-modal="player" data-tx-title="四十七秒:孩子第一次系好鞋带">
+            <div class="tx-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='f2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23f5e6d3'/%3E%3Cstop offset='1' stop-color='%23e2a37c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23f2)'/%3E%3Ccircle cx='400' cy='60' r='58' fill='%23fff' opacity='0.4'/%3E%3Cpath d='M60 220 Q150 150 240 200 T420 180' stroke='%23fff' stroke-width='10' fill='none' opacity='0.6'/%3E%3Crect x='200' y='100' width='80' height='60' rx='10' fill='%23fff' opacity='0.85'/%3E%3C/svg%3E" alt="孩子系鞋带日常记录封面:暖橙色手绘线条">
+              <span class="tx-cover-dur">04:07</span>
+              <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div>
+              <h4>四十七秒:孩子第一次系好鞋带</h4>
+              <p class="tx-meta">日常记录 · 糖心安安老师 · 1.2 万次收藏</p>
+            </div>
+          </article>
+          <article class="tx-focus-item tx-card" data-tx-modal="player" data-tx-title="厨房里的十分钟:把家务做成冥想">
+            <div class="tx-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='f3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23d9e8de'/%3E%3Cstop offset='1' stop-color='%236f9f83'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23f3)'/%3E%3Ccircle cx='120' cy='90' r='70' fill='%23fff' opacity='0.32'/%3E%3Cpath d='M180 200 h120 v30 h-120z' fill='%23fff' opacity='0.7'/%3E%3Cpath d='M210 200 c0-40 60-40 60 0' stroke='%23fff' stroke-width='9' fill='none' opacity='0.85'/%3E%3C/svg%3E" alt="厨房家务冥想主题封面:自然绿色调与碗具轮廓">
+              <span class="tx-cover-dur">08:52</span>
+              <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div>
+              <h4>厨房里的十分钟:把家务做成冥想</h4>
+              <p class="tx-meta">生活技巧 · 讲师:林小满 · 8.6 千次点赞</p>
+            </div>
+          </article>
+          <article class="tx-focus-item tx-card" data-tx-modal="player" data-tx-title="城市探索:地铁末班车上的六个人">
+            <div class="tx-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='f4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b8ccdb'/%3E%3Cstop offset='1' stop-color='%234b6b84'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23f4)'/%3E%3Crect x='90' y='150' width='300' height='14' rx='7' fill='%23fff' opacity='0.5'/%3E%3Crect x='150' y='90' width='180' height='52' rx='8' fill='%23fff' opacity='0.28'/%3E%3Ccircle cx='380' cy='70' r='30' fill='%23fff' opacity='0.5'/%3E%3C/svg%3E" alt="地铁末班车城市探索封面:冷调蓝灰车厢">
+              <span class="tx-cover-dur">10:31</span>
+              <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div>
+              <h4>城市探索:地铁末班车上的六个人</h4>
+              <p class="tx-meta">城市探索 · 创作者:周序 · 6,205 次分享</p>
+            </div>
+          </article>
+          <article class="tx-focus-item tx-card" data-tx-modal="player" data-tx-title="情绪对谈:允许自己今天不开心">
+            <div class="tx-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='f5' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23e6d6ef'/%3E%3Cstop offset='1' stop-color='%23a07bba'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23f5)'/%3E%3Ccircle cx='240' cy='135' r='72' fill='none' stroke='%23fff' stroke-width='8' opacity='0.6'/%3E%3Cpath d='M240 105 v60' stroke='%23fff' stroke-width='10' stroke-linecap='round' opacity='0.9'/%3E%3Ccircle cx='240' cy='190' r='7' fill='%23fff'/%3E%3C/svg%3E" alt="情绪对谈主题封面:柔和粉紫圆环与温度线">
+              <span class="tx-cover-dur">06:18</span>
+              <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div>
+              <h4>情绪对谈:允许自己今天不开心</h4>
+              <p class="tx-meta">情感故事 · 对谈:安安 & 苏叶 · 9.4 千次收藏</p>
+            </div>
+          </article>
+          <article class="tx-focus-item tx-card" data-tx-modal="player" data-tx-title="幕后:一条十二分钟视频的诞生">
+            <div class="tx-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='f6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f2c8b8'/%3E%3Cstop offset='1' stop-color='%23c0573f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23f6)'/%3E%3Crect x='120' y='70' width='240' height='130' rx='14' fill='%23fff' opacity='0.85'/%3E%3Cpath d='M160 200 l60-80 50 50 40-40' stroke='%23c0573f' stroke-width='8' fill='none' opacity='0.6'/%3E%3C/svg%3E" alt="创作幕后专题封面:暖红色调与镜头画面">
+              <span class="tx-cover-dur">12:00</span>
+              <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+            </div>
+            <div>
+              <h4>幕后:一条十二分钟视频的诞生</h4>
+              <p class="tx-meta">创作幕后 · 品牌团队 · 4,188 次讨论</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 热门视频流 ===== -->
+  <section class="tx-section" id="tx-stream" aria-labelledby="tx-stream-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">热门视频流</span>
+        <h2 class="tx-h2" id="tx-stream-h">社区正在看:六部被反复收藏的作品</h2>
+        <p class="tx-section-desc">来自官方企划与用户投稿,涵盖亲子、治愈、技巧与人物四个方向。</p>
+      </div>
+      <div class="tx-stream-tools" role="tablist" aria-label="视频标签筛选">
+        <button class="tx-chip is-active" type="button" data-tx-filter="all">全部</button>
+        <button class="tx-chip" type="button" data-tx-filter="亲子">亲子成长</button>
+        <button class="tx-chip" type="button" data-tx-filter="治愈">日常治愈</button>
+        <button class="tx-chip" type="button" data-tx-filter="技巧">实用技巧</button>
+        <button class="tx-chip" type="button" data-tx-filter="访谈">人物访谈</button>
+      </div>
+      <div class="tx-stream-grid" id="txStreamGrid">
+
+        <article class="tx-card" data-tx-targets="亲子 访谈">
+          <div class="tx-cover" data-tx-modal="player" data-tx-title="和孩子一起做一件慢事">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fdd9e3'/%3E%3Cstop offset='1' stop-color='%23d17fa4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c1)'/%3E%3Ccircle cx='110' cy='80' r='52' fill='%23fff' opacity='0.4'/%3E%3Cpath d='M120 210 q40-70 90-30 t90-30' stroke='%23fff' stroke-width='9' fill='none' opacity='0.7'/%3E%3Crect x='300' y='70' width='90' height='66' rx='12' fill='%23fff' opacity='0.55'/%3E%3C/svg%3E" alt="和孩子一起做一件慢事的封面:粉色渐变与手绘轨迹">
+            <span class="tx-cover-tag">亲子成长</span>
+            <span class="tx-cover-dur">09:16</span>
+            <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="tx-card-body">
+            <h3>和孩子一起做一件慢事:三十分钟里的耐心练习</h3>
+            <p>不赶时间的亲子时光到底该怎么度过?我们记录了三个家庭在阳台种豆苗的完整过程,以及中途几乎放弃的那一刻。</p>
+            <div class="tx-tag-row"><span class="tx-tag">亲子成长</span><span class="tx-tag">人物访谈</span><span class="tx-tag">正版</span></div>
+            <div class="tx-card-foot">
+              <span class="tx-avatar tx-av-a">安安</span>
+              <span class="tx-card-author">糖心安安老师<small>11-17 · 3.1 万播放</small></span>
+              <button class="tx-act" type="button" data-tx-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg><span data-tx-like-num>1874</span></button>
+              <button class="tx-act" type="button" data-tx-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-card" data-tx-targets="治愈">
+          <div class="tx-cover" data-tx-modal="player" data-tx-title="雨天的午后">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cfdce6'/%3E%3Cstop offset='1' stop-color='%237e97a8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c2)'/%3E%3Crect x='70' y='60' width='90' height='120' rx='8' fill='%23fff' opacity='0.35'/%3E%3Crect x='310' y='40' width='110' height='140' rx='8' fill='%23fff' opacity='0.25'/%3E%3Cpath d='M0 230 h480 v8 H0z' fill='%23fff' opacity='0.4'/%3E%3Cpath d='M150 40 l-18 80 M210 20 l-18 90 M280 50 l-18 76' stroke='%23fff' stroke-width='5' stroke-linecap='round' opacity='0.55'/%3E%3C/svg%3E" alt="雨天午后治愈影像封面:冷灰蓝色窗格与雨线">
+            <span class="tx-cover-tag">日常治愈</span>
+            <span class="tx-cover-dur">05:42</span>
+            <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="tx-card-body">
+            <h3>雨天的午后:一个人在家可以做的事</h3>
+            <p>没有配乐,只有雨声、水开的声音和翻书的声音。这条视频被观众称为“最省力的休息”,评论区留下了两百多个雨天的故事。</p>
+            <div class="tx-tag-row"><span class="tx-tag">日常治愈</span><span class="tx-tag">治愈影像</span></div>
+            <div class="tx-card-foot">
+              <span class="tx-avatar tx-av-d">苏</span>
+              <span class="tx-card-author">苏叶<small>11-16 · 2.4 万播放</small></span>
+              <button class="tx-act" type="button" data-tx-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg><span data-tx-like-num>2301</span></button>
+              <button class="tx-act" type="button" data-tx-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-card" data-tx-targets="技巧">
+          <div class="tx-cover" data-tx-modal="player" data-tx-title="收纳三步法">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c3' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23f6e7c8'/%3E%3Cstop offset='1' stop-color='%23c99a52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c3)'/%3E%3Crect x='90' y='120' width='90' height='90' rx='8' fill='%23fff' opacity='0.75'/%3E%3Crect x='200' y='90' width='90' height='120' rx='8' fill='%23fff' opacity='0.6'/%3E%3Crect x='310' y='140' width='80' height='70' rx='8' fill='%23fff' opacity='0.85'/%3E%3Ccircle cx='400' cy='60' r='40' fill='%23fff' opacity='0.35'/%3E%3C/svg%3E" alt="收纳三步法教程封面:米黄与琥珀色方块">
+            <span class="tx-cover-tag">实用技巧</span>
+            <span class="tx-cover-dur">07:33</span>
+            <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="tx-card-body">
+            <h3>收纳三步法:让家里多出两平米的错觉</h3>
+            <p>从玄关到书桌,用三个固定的动作建立顺手的位置。视频附带可下载的检查清单,已在社区被下载 9 千余次。</p>
+            <div class="tx-tag-row"><span class="tx-tag">实用技巧</span><span class="tx-tag">家居收纳</span><span class="tx-tag">下载</span></div>
+            <div class="tx-card-foot">
+              <span class="tx-avatar tx-av-c">满</span>
+              <span class="tx-card-author">林小满<small>11-15 · 1.9 万播放</small></span>
+              <button class="tx-act" type="button" data-tx-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg><span data-tx-like-num>1129</span></button>
+              <button class="tx-act" type="button" data-tx-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-card" data-tx-targets="访谈 亲子">
+          <div class="tx-cover" data-tx-modal="player" data-tx-title="她说她不想当完美妈妈">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e9d8f2'/%3E%3Cstop offset='1' stop-color='%238f6fb5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c4)'/%3E%3Ccircle cx='240' cy='110' r='50' fill='%23fff' opacity='0.55'/%3E%3Cpath d='M180 210 q60-50 120 0' stroke='%23fff' stroke-width='10' fill='none' opacity='0.7'/%3E%3Ccircle cx='400' cy='200' r='26' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E" alt="访谈她说她不想当完美妈妈封面:紫色调人物剪影">
+            <span class="tx-cover-tag">人物访谈</span>
+            <span class="tx-cover-dur">13:07</span>
+            <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="tx-card-body">
+            <h3>她说她不想当完美妈妈:一次坦白的长谈</h3>
+            <p>嘉宾是一位三岁孩子的母亲,也是一名夜班护士。她讲到自己如何在疲惫中重新定义“够好”,讲到一半时哭了。</p>
+            <div class="tx-tag-row"><span class="tx-tag">人物访谈</span><span class="tx-tag">亲子成长</span><span class="tx-tag">真实</span></div>
+            <div class="tx-card-foot">
+              <span class="tx-avatar tx-av-b">周</span>
+              <span class="tx-card-author">周序<small>11-14 · 2.8 万播放</small></span>
+              <button class="tx-act" type="button" data-tx-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg><span data-tx-like-num>2043</span></button>
+              <button class="tx-act" type="button" data-tx-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-card" data-tx-targets="治愈 技巧">
+          <div class="tx-cover" data-tx-modal="player" data-tx-title="一杯热牛奶的仪式感">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fce4d6'/%3E%3Cstop offset='1' stop-color='%23e0a882'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c5)'/%3E%3Cpath d='M200 110 h80 v70 a40 40 0 0 1 -80 0 z' fill='%23fff' opacity='0.85'/%3E%3Cpath d='M280 130 h22 a16 16 0 0 1 0 32 h-22' stroke='%23fff' stroke-width='8' fill='none' opacity='0.8'/%3E%3Cpath d='M220 80 q10-16 0-30 M250 80 q10-16 0-30' stroke='%23fff' stroke-width='6' fill='none' opacity='0.6' stroke-linecap='round'/%3E%3C/svg%3E" alt="一杯热牛奶的仪式感封面:暖杏色杯具与热气">
+            <span class="tx-cover-tag">日常治愈</span>
+            <span class="tx-cover-dur">04:48</span>
+            <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="tx-card-body">
+            <h3>一杯热牛奶的仪式感:睡前十分钟怎么过</h3>
+            <p>把睡前时间切成三段,每段只做一件事。这条内容被很多观众当作固定睡前节目,平均完播率达到 78%。</p>
+            <div class="tx-tag-row"><span class="tx-tag">日常治愈</span><span class="tx-tag">实用技巧</span></div>
+            <div class="tx-card-foot">
+              <span class="tx-avatar tx-av-a">安安</span>
+              <span class="tx-card-author">糖心安安老师<small>11-13 · 1.6 万播放</small></span>
+              <button class="tx-act" type="button" data-tx-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg><span data-tx-like-num>1567</span></button>
+              <button class="tx-act" type="button" data-tx-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tx-card" data-tx-targets="亲子 治愈">
+          <div class="tx-cover" data-tx-modal="player" data-tx-title="外婆的手写菜谱">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='c6' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23f3ead6'/%3E%3Cstop offset='1' stop-color='%23b9a06e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23c6)'/%3E%3Crect x='120' y='50' width='240' height='170' rx='6' fill='%23fff' opacity='0.9'/%3E%3Cpath d='M150 90 h180 M150 116 h150 M150 142 h170 M150 168 h120' stroke='%23b9a06e' stroke-width='5' stroke-linecap='round' opacity='0.7'/%3E%3Ccircle cx='420' cy='70' r='34' fill='%23fff' opacity='0.4'/%3E%3C/svg%3E" alt="外婆的手写菜谱封面:米色纸张与手写线条">
+            <span class="tx-cover-tag">亲子成长</span>
+            <span class="tx-cover-dur">11:52</span>
+            <span class="tx-cover-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="tx-card-body">
+            <h3>外婆的手写菜谱:一道菜传了三代人</h3>
+            <p>从一张泛黄的纸到灶台上的火候,我们跟着一家四代人复刻那道红烧肉,顺便听完了外婆的整个青春。</p>
+            <div class="tx-tag-row"><span class="tx-tag">亲子成长</span><span class="tx-tag">日常治愈</span><span class="tx-tag">美食烹饪</span></div>
+            <div class="tx-card-foot">
+              <span class="tx-avatar tx-av-e">禾</span>
+              <span class="tx-card-author">禾禾记录<small>11-12 · 3.3 万播放</small></span>
+              <button class="tx-act" type="button" data-tx-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg><span data-tx-like-num>2760</span></button>
+              <button class="tx-act" type="button" data-tx-save aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 专题企划 ===== -->
+  <section class="tx-section" id="tx-special" aria-labelledby="tx-special-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">专题企划</span>
+        <h2 class="tx-h2" id="tx-special-h">正在进行的四个企划</h2>
+        <p class="tx-section-desc">每个企划都有明确的叙事线索与投稿入口,欢迎带着自己的故事加入。</p>
+      </div>
+      <div class="tx-special-grid">
+        <a class="tx-special" href="#tx-join">
+          <div class="tx-sp-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 520'%3E%3Cdefs%3E%3ClinearGradient id='p1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23eab8cc'/%3E%3Cstop offset='1' stop-color='%23804a67'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='520' fill='url(%23p1)'/%3E%3Ccircle cx='560' cy='130' r='110' fill='%23fff' opacity='0.18'/%3E%3Cpath d='M110 400 q90-90 180-30 t180-40' stroke='%23fff' stroke-width='12' fill='none' opacity='0.4'/%3E%3Ccircle cx='210' cy='210' r='46' fill='%23fff' opacity='0.45'/%3E%3C/svg%3E" alt="温柔的答案第二季专题封面:粉紫弧形光线">
+          </div>
+          <span class="tx-sp-state">更新中 · 每周五</span>
+          <h3>温柔的答案 · 第二季</h3>
+          <p>八组家庭,八次不完美的对话。我们用一整季追问同一个问题:把心里话说出来,到底难在哪里?</p>
+        </a>
+        <a class="tx-special" href="#tx-join">
+          <div class="tx-sp-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 520'%3E%3Cdefs%3E%3ClinearGradient id='p2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23cfe0ea'/%3E%3Cstop offset='1' stop-color='%23507a99'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='520' fill='url(%23p2)'/%3E%3Crect x='120' y='120' width='200' height='140' rx='14' fill='%23fff' opacity='0.5'/%3E%3Crect x='380' y='250' width='220' height='150' rx='14' fill='%23fff' opacity='0.32'/%3E%3Cpath d='M0 440 h720' stroke='%23fff' stroke-width='10' opacity='0.3'/%3E%3C/svg%3E" alt="冬日陪伴影像计划专题封面:冷调蓝灰窗景">
+          </div>
+          <span class="tx-sp-state">报名开放 · 12-20 截止</span>
+          <h3>冬日陪伴影像计划</h3>
+          <p>记录一个你在冬天想陪的人。不限设备与时长,我们提供剪辑指导与官方展映位,优秀作品将进入年度影像档案。</p>
+        </a>
+        <a class="tx-special" href="#tx-join">
+          <div class="tx-sp-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 520'%3E%3Cdefs%3E%3ClinearGradient id='p3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ddE8cd'/%3E%3Cstop offset='1' stop-color='%236d9057'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='520' fill='url(%23p3)'/%3E%3Ccircle cx='180' cy='150' r='70' fill='%23fff' opacity='0.4'/%3E%3Cpath d='M110 380 q120-70 240 0 t250-40' stroke='%23fff' stroke-width='11' fill='none' opacity='0.45'/%3E%3Crect x='470' y='90' width='120' height='90' rx='12' fill='%23fff' opacity='0.35'/%3E%3C/svg%3E" alt="慢手艺手作专题封面:自然绿与手作材料">
+          </div>
+          <span class="tx-sp-state">连载中 · 已上 5 集</span>
+          <h3>慢手艺 · 手作人的一天</h3>
+          <p>陶艺、织补、木作、装帧。我们走进五位手作人的工作室,看他们如何把一整天过成一件作品。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 创作者矩阵 ===== -->
+  <section class="tx-section" id="tx-creators" aria-labelledby="tx-creators-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">创作者矩阵</span>
+        <h2 class="tx-h2" id="tx-creators-h">让内容被认真对待的人</h2>
+        <p class="tx-section-desc">点击任一创作者卡片,可以查看TA的领域与代表作品简介。</p>
+      </div>
+      <div class="tx-creator-grid">
+        <article class="tx-creator" tabindex="0" role="button" data-tx-creator="糖心安安老师|亲子成长观察 · 品牌主理人|186|32.4 万|从家庭录像起步的创作者,擅长在琐碎日常里找到叙事线索,主张“不急着给答案”。代表企划《温柔的答案》《四十七秒》。">
+          <div class="tx-creator-head">
+            <span class="tx-avatar tx-av-a">安安</span>
+            <div><b>糖心安安老师</b><small>品牌主理人 · 亲子成长观察</small></div>
+          </div>
+          <p>从家庭录像起步,擅长在琐碎日常里找到叙事线索,主张“不急着给答案”。代表企划《温柔的答案》《四十七秒》。</p>
+          <div class="tx-creator-stats"><span><b>186</b>作品</span><span><b>32.4 万</b>关注</span></div>
+        </article>
+        <article class="tx-creator" tabindex="0" role="button" data-tx-creator="苏叶|日常治愈 · 声音采集|64|11.2 万|声音设计师出身,专门记录城市里的白噪音。她的视频几乎不配乐,却总让人愿意多待一会儿。">
+          <div class="tx-creator-head">
+            <span class="tx-avatar tx-av-d">苏</span>
+            <div><b>苏叶</b><small>日常治愈 · 声音采集</small></div>
+          </div>
+          <p>声音设计师出身,专门记录城市里的白噪音。她的视频几乎不配乐,却总让人愿意多待一会儿。</p>
+          <div class="tx-creator-stats"><span><b>64</b>作品</span><span><b>11.2 万</b>关注</span></div>
+        </article>
+        <article class="tx-creator" tabindex="0" role="button" data-tx-creator="林小满|实用技巧 · 家居收纳|92|18.6 万|前空间设计师,把收纳讲成方法论。她的清单被观众称为“照着做就不会错”,口碑极高。">
+          <div class="tx-creator-head">
+            <span class="tx-avatar tx-av-c">满</span>
+            <div><b>林小满</b><small>实用技巧 · 家居收纳</small></div>
+          </div>
+          <p>前空间设计师,把收纳讲成方法论。她的清单被观众称为“照着做就不会错”,口碑极高。</p>
+          <div class="tx-creator-stats"><span><b>92</b>作品</span><span><b>18.6 万</b>关注</span></div>
+        </article>
+        <article class="tx-creator" tabindex="0" role="button" data-tx-creator="周序|人物访谈 · 城市探索|78|15.1 万|影像记者,习惯在陌生城市待满七天再开机。他相信真正的故事都发生在镜头放下的间隙。">
+          <div class="tx-creator-head">
+            <span class="tx-avatar tx-av-b">周</span>
+            <div><b>周序</b><small>人物访谈 · 城市探索</small></div>
+          </div>
+          <p>影像记者,习惯在陌生城市待满七天再开机。他相信真正的故事都发生在镜头放下的间隙。</p>
+          <div class="tx-creator-stats"><span><b>78</b>作品</span><span><b>15.1 万</b>关注</span></div>
+        </article>
+        <article class="tx-creator" tabindex="0" role="button" data-tx-creator="禾禾记录|亲子成长 · 美食烹饪|53|9.8 万|三代同堂的家庭记录者,用一桌饭串起家族记忆。作品节奏缓慢,却被大量家庭反复播放。">
+          <div class="tx-creator-head">
+            <span class="tx-avatar tx-av-e">禾</span>
+            <div><b>禾禾记录</b><small>亲子成长 · 美食烹饪</small></div>
+          </div>
+          <p>三代同堂的家庭记录者,用一桌饭串起家族记忆。作品节奏缓慢,却被大量家庭反复播放。</p>
+          <div class="tx-creator-stats"><span><b>53</b>作品</span><span><b>9.8 万</b>关注</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 随笔 ===== -->
+  <section class="tx-section" aria-labelledby="tx-essay-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">影像随笔</span>
+        <h2 class="tx-h2" id="tx-essay-h">镜头之外的几段文字</h2>
+        <p class="tx-section-desc">有些感受没法剪进十分钟里,于是我们把它写下来。</p>
+      </div>
+      <div class="tx-essay-grid">
+        <article class="tx-essay">
+          <h3>写作现场:我们把提问删掉了</h3>
+          <p>拍《温柔的答案》时,最难的环节不是拍摄,而是准备问题。团队写了整整四页提纲,最后全部作废。因为当我们问“你和孩子最严重的一次冲突是什么”时,对方会立刻给出一个漂亮的、排练过的答案。真正有效的问句往往是“你上一次觉得撑不住,是什么时候”。我们把提问删到只剩三个,然后把镜头留在那里,等沉默过去。</p>
+          <div class="tx-essay-sign">—— 编辑手记 · 采集于 11 月 16 日</div>
+        </article>
+        <article class="tx-essay">
+          <h3>看过的一百种晚饭</h3>
+          <p>这一年我们拍了太多张饭桌。有人家在客厅,有人家在阳台,还有一位观众把晚饭摆在飘窗上,因为厨房在修。奇怪的是,这些画面最终都很像:光线偏暖,碗碟边缘有磨损,有人用手挡了一下镜头说别拍了。糖心安安老师的很多视频并不讨论“好不好”,它只是把一顿饭认真看完。这大概就是日常记录的意义:不是证明什么,而是保留什么。</p>
+          <div class="tx-essay-sign">—— 影像组 · 苏叶</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 影像墙 ===== -->
+  <section class="tx-section" aria-labelledby="tx-wall-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">作品墙</span>
+        <h2 class="tx-h2" id="tx-wall-h">社区投稿影像精选</h2>
+        <p class="tx-section-desc">来自用户的作品,已获作者授权展示。大小不一的画幅,也代表不同的心情比例。</p>
+      </div>
+      <div class="tx-wall">
+        <figure class="tx-wall-item tx-w-lg">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 560'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f7d7df'/%3E%3Cstop offset='1' stop-color='%23b17097'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='560' fill='url(%23w1)'/%3E%3Ccircle cx='540' cy='160' r='100' fill='%23fff' opacity='0.25'/%3E%3Cpath d='M100 460 q120-120 240-40 t280-60' stroke='%23fff' stroke-width='12' fill='none' opacity='0.4'/%3E%3C/svg%3E" alt="清晨阳台上的第一杯水投稿影像">
+          <figcaption>清晨阳台上的第一杯水 · @阿宁</figcaption>
+        </figure>
+        <figure class="tx-wall-item tx-w-md">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 280'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23d5e6f0'/%3E%3Cstop offset='1' stop-color='%235d86a3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='560' height='280' fill='url(%23w2)'/%3E%3Crect x='90' y='70' width='120' height='90' rx='10' fill='%23fff' opacity='0.45'/%3E%3Crect x='340' y='110' width='140' height='90' rx='10' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E" alt="雨天公交车窗上的水痕投稿影像">
+          <figcaption>雨天公交车窗上的水痕 · @陈默</figcaption>
+        </figure>
+        <figure class="tx-wall-item tx-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 280'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbe8c9'/%3E%3Cstop offset='1' stop-color='%23cfa055'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='280' height='280' fill='url(%23w3)'/%3E%3Ccircle cx='140' cy='130' r='56' fill='%23fff' opacity='0.5'/%3E%3Cpath d='M70 220 h140' stroke='%23fff' stroke-width='10' stroke-linecap='round' opacity='0.7'/%3E%3C/svg%3E" alt="外婆厨房里冒热气的砂锅投稿影像">
+          <figcaption>砂锅冒热气 · @小满</figcaption>
+        </figure>
+        <figure class="tx-wall-item tx-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 280'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23d9e8d0'/%3E%3Cstop offset='1' stop-color='%236d9a5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='280' height='280' fill='url(%23w4)'/%3E%3Cpath d='M140 200 v-80 M140 120 q-40-10-50-50 q50 0 50 50 M140 120 q40-10 50-50 q-50 0-50 50' stroke='%23fff' stroke-width='9' fill='none' opacity='0.7'/%3E%3C/svg%3E" alt="阳台上刚发芽的豆苗投稿影像">
+          <figcaption>豆苗第一片叶 · @禾禾</figcaption>
+        </figure>
+        <figure class="tx-wall-item tx-w-md">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 280'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e2d4ef'/%3E%3Cstop offset='1' stop-color='%237b5b9e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='560' height='280' fill='url(%23w5)'/%3E%3Ccircle cx='170' cy='140' r='60' fill='%23fff' opacity='0.3'/%3E%3Ccircle cx='400' cy='150' r='42' fill='%23fff' opacity='0.45'/%3E%3Cpath d='M120 240 h320' stroke='%23fff' stroke-width='9' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E" alt="深夜书桌上的一盏灯投稿影像">
+          <figcaption>书桌上那盏灯 · @夜航</figcaption>
+        </figure>
+        <figure class="tx-wall-item tx-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 280'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f8d9d0'/%3E%3Cstop offset='1' stop-color='%23c96c5a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='280' height='280' fill='url(%23w6)'/%3E%3Cpath d='M80 180 q60-70 120 0' stroke='%23fff' stroke-width='10' fill='none' opacity='0.6'/%3E%3Ccircle cx='140' cy='110' r='30' fill='%23fff' opacity='0.55'/%3E%3C/svg%3E" alt="孩子画在墙上的彩虹投稿影像">
+          <figcaption>墙上的彩虹 · @慢慢</figcaption>
+        </figure>
+        <figure class="tx-wall-item tx-w-sm">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 280'%3E%3Cdefs%3E%3ClinearGradient id='w7' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cfe3e7'/%3E%3Cstop offset='1' stop-color='%23518a99'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='280' height='280' fill='url(%23w7)'/%3E%3Crect x='60' y='110' width='160' height='90' rx='10' fill='%23fff' opacity='0.35'/%3E%3Cpath d='M110 110 v-30 h60 v30' stroke='%23fff' stroke-width='8' fill='none' opacity='0.7'/%3E%3C/svg%3E" alt="旧木桌上摊开的旧相册投稿影像">
+          <figcaption>摊开的旧相册 · @老周</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 评价 + 动态 + 榜单 ===== -->
+  <section class="tx-section" aria-labelledby="tx-review-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">社区口碑</span>
+        <h2 class="tx-h2" id="tx-review-h">来自观众的六种声音</h2>
+        <p class="tx-section-desc">不同长度、不同视角,都来自真实的观看体验。</p>
+      </div>
+      <div class="tx-review-grid">
+        <article class="tx-review">
+          <div class="tx-review-stars">★★★★★</div>
+          <p>第一次在糖心安安老师的视频里看到和我一样笨拙的妈妈。她没有告诉我要怎么做得更好,只是把那段日子认真拍了下来,我看完哭了很久。</p>
+          <div class="tx-review-foot"><span class="tx-avatar tx-av-a">林</span><div><b>林女士</b><small>两个孩子的妈妈 · 关注 3 年</small></div></div>
+        </article>
+        <article class="tx-review">
+          <div class="tx-review-stars">★★★★★</div>
+          <p>收纳那期我反复看了四遍,清单打印出来贴在柜门上。最难得的是她不夸张,不会说“看完就变整齐”,而是说“先从一个抽屉开始”。</p>
+          <div class="tx-review-foot"><span class="tx-avatar tx-av-c">郑</span><div><b>郑同学</b><small>租房党 · 关注 1 年</small></div></div>
+        </article>
+        <article class="tx-review">
+          <div class="tx-review-stars">★★★★☆</div>
+          <p>内容质量很稳,画质和声音都舒服。唯一想提的是希望能多一些短一点的片段,通勤路上十分钟刚刚好。</p>
+          <div class="tx-review-foot"><span class="tx-avatar tx-av-b">何</span><div><b>何先生</b><small>产品经理 · 关注 8 个月</small></div></div>
+        </article>
+        <article class="tx-review">
+          <div class="tx-review-stars">★★★★★</div>
+          <p>投稿过一次,收到了两条很具体的修改建议,不是模板话。后来那条视频上线,播放量虽然不高,但我知道自己进步在哪儿了。</p>
+          <div class="tx-review-foot"><span class="tx-avatar tx-av-e">禾</span><div><b>禾禾</b><small>社区投稿作者 · 已发布 6 条</small></div></div>
+        </article>
+        <article class="tx-review">
+          <div class="tx-review-stars">★★★★★</div>
+          <p>雨声那条视频我设成了睡前必看。很奇怪,什么都不发生的十几分钟,反而是一天里最放松的时候。</p>
+          <div class="tx-review-foot"><span class="tx-avatar tx-av-d">苏</span><div><b>苏先生</b><small>夜班工作者 · 关注 2 年</small></div></div>
+        </article>
+        <article class="tx-review">
+          <div class="tx-review-stars">★★★★☆</div>
+          <p>企业动态更新得比较实在,能看到团队在做什么,不像有些品牌只发宣传。希望比赛可以多开放一些名额。</p>
+          <div class="tx-review-foot"><span class="tx-avatar tx-av-f">方</span><div><b>方老师</b><small>小学教师 · 关注 5 个月</small></div></div>
+        </article>
+      </div>
+
+      <div class="tx-two-col" style="margin-top:52px">
+        <div>
+          <div class="tx-section-head" style="margin-bottom:18px">
+            <span class="tx-eyebrow">企业动态</span>
+            <h2 class="tx-h2" style="font-size:24px">近期官方发布</h2>
+          </div>
+          <div class="tx-news-list" id="tx-news">
+            <div class="tx-news">
+              <div class="tx-news-date"><b>11-18</b><span>2026</span></div>
+              <div class="tx-news-body"><h3>《温柔的答案》第二季定档 11 月 21 日</h3><p>全季共 8 集,每周五上午 10 点更新,首集聚焦“把话说完”。官方同步开放观后讨论区。</p></div>
+            </div>
+            <div class="tx-news">
+              <div class="tx-news-date"><b>11-15</b><span>2026</span></div>
+              <div class="tx-news-body"><h3>「冬日陪伴影像计划」报名开启</h3><p>面向所有家庭开放,不设设备门槛,提供剪辑指导与官方展映位,12 月 20 日截止报名。</p></div>
+            </div>
+            <div class="tx-news">
+              <div class="tx-news-date"><b>11-10</b><span>2026</span></div>
+              <div class="tx-news-body"><h3>创作者同行评审机制完成年度升级</h3><p>新增伦理评估与儿童出镜规范双审流程,评审反馈时效由 14 天缩短至 7 天。</p></div>
+            </div>
+            <div class="tx-news">
+              <div class="tx-news-date"><b>11-04</b><span>2026</span></div>
+              <div class="tx-news-body"><h3>乡村儿童影像教育公益项目第三期启动</h3><p>新增 4 所合作小学,提供影像课程、设备支持与教师培训,项目进展将在官网持续公开。</p></div>
+            </div>
+            <div class="tx-news">
+              <div class="tx-news-date"><b>10-28</b><span>2026</span></div>
+              <div class="tx-news-body"><h3>「温柔记录者」年度比赛结果公布</h3><p>共收到 1263 份投稿,最终 12 部作品入选年度影像档案,全部作品可在线浏览。</p></div>
+            </div>
+          </div>
+        </div>
+        <aside class="tx-rank" aria-label="社区热度榜单">
+          <h3>本周热度榜</h3>
+          <ul>
+            <li><span class="tx-rank-no">1</span><span class="tx-rank-name">《温柔的答案》第二季预告</span><span class="tx-rank-score">98.6</span></li>
+            <li><span class="tx-rank-no">2</span><span class="tx-rank-name">四十七秒:孩子第一次系好鞋带</span><span class="tx-rank-score">95.2</span></li>
+            <li><span class="tx-rank-no">3</span><span class="tx-rank-name">外婆的手写菜谱</span><span class="tx-rank-score">92.8</span></li>
+            <li><span class="tx-rank-no">4</span><span class="tx-rank-name">雨天的午后:一个人在家</span><span class="tx-rank-score">90.4</span></li>
+            <li><span class="tx-rank-no">5</span><span class="tx-rank-name">收纳三步法完整清单</span><span class="tx-rank-score">88.1</span></li>
+            <li><span class="tx-rank-no">6</span><span class="tx-rank-name">她说她不想当完美妈妈</span><span class="tx-rank-score">86.7</span></li>
+          </ul>
+          <p style="font-size:12.5px;color:var(--tx-muted);margin-top:14px;line-height:1.7">榜单综合播放完成率、收藏与讨论热度计算,每周一更新。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="tx-section" id="tx-faq" aria-labelledby="tx-faq-h">
+    <div class="tx-wrap">
+      <div class="tx-section-head">
+        <span class="tx-eyebrow">帮助中心</span>
+        <h2 class="tx-h2" id="tx-faq-h">常见问题</h2>
+        <p class="tx-section-desc">关于内容、投稿、版权与合作,这里是最常被问到的六个问题。</p>
+      </div>
+      <div class="tx-faq">
+        <details open>
+          <summary>糖心安安老师官方内容是原创的吗?</summary>
+          <p>是。平台所有标注“品牌自制企划”的内容均由糖心文化传媒团队自主策划、拍摄与制作;社区投稿内容在发布前会进行原创性与授权核验,涉及音乐、字体、影像素材的部分均使用正版授权资源。如发现疑似侵权内容,可通过联系入口提交线索,我们会在 3 个工作日内回应。</p>
+        </details>
+        <details>
+          <summary>怎样向官方投稿?需要什么条件?</summary>
+          <p>投稿通道每季度开放,当前「冬日陪伴影像计划」正在报名。不限制拍摄设备与作品时长,只需保证画面清晰、声音可辨、内容真实并拥有完整授权。投稿时请附上简要创作说明,评审组会在 7 天内给出反馈,通过后进入编辑沟通环节。</p>
+        </details>
+        <details>
+          <summary>视频可以下载保存吗?</summary>
+          <p>标注“支持下载”的教程类与清单类内容提供官方下载入口,仅供个人学习使用。影视化企划内容不提供下载,建议在官网页面内观看以保证画质与章节完整。任何二次剪辑、搬运或商业使用均需提前取得书面授权。</p>
+        </details>
+        <details>
+          <summary>儿童出镜内容有哪些保护措施?</summary>
+          <p>涉及未成年人的内容必须由监护人签署授权,并经过内容伦理评估与法务复核两道流程。拍摄过程中保留随时中止的权利,成片发布前监护人可要求删减任意片段。我们不会公开儿童的真实姓名、学校与具体住址等信息。</p>
+        </details>
+        <details>
+          <summary>品牌合作如何联系?</summary>
+          <p>我们欢迎与家庭、教育、生活方式方向契合的品牌进行内容共创,但拒绝对内容结论进行干预。合作咨询请通过页脚联系方式提交,注明合作方向、周期与预算区间,商务团队会在 5 个工作日内回复初步意向。</p>
+        </details>
+        <details>
+          <summary>创作者如何加入签约作者计划?</summary>
+          <p>在社区发布不少于 3 条原创作品、保持稳定更新并参与过同行评审的作者,可申请加入签约计划。评审关注叙事完整度、真实感与更新稳定性,不唯数据论。签约后获得企划参与机会、制作支持与分成方案。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 投稿 / 联系 ===== -->
+  <section class="tx-section" id="tx-join" aria-labelledby="tx-join-h">
+    <div class="tx-wrap">
+      <div class="tx-join">
+        <div class="tx-join-copy">
+          <h2 id="tx-join-h">把你的故事,交给愿意认真看完的人</h2>
+          <p>无论你手上是一段手机拍的黄昏,还是一份写了三年的家庭记录,糖心安安老师官网都愿意为它留一个位置。投稿、报名、合作咨询与反馈建议,都可以从这里开始。我们更在意真实,而不是完美。</p>
+          <div class="tx-join-forms">
+            <button class="tx-btn tx-btn-primary" type="button" data-tx-modal="submit">我要投稿 / 报名</button>
+            <button class="tx-btn tx-btn-ghost" type="button" data-tx-modal="contact">联系品牌团队</button>
+            <button class="tx-btn tx-btn-ghost" type="button" data-tx-modal="share">分享给朋友</button>
+          </div>
+        </div>
+        <div style="position:relative;z-index:1">
+          <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:20px 22px;backdrop-filter:blur(6px)">
+            <p style="font-size:13.5px;opacity:.95;margin:0 0 10px">官方投稿邮箱</p>
+            <p style="font-size:16px;font-weight:600;letter-spacing:.5px;margin:0 0 16px">creator@tangxinan-anan.example</p>
+            <p style="font-size:13.5px;opacity:.95;margin:0 0 10px">品牌合作</p>
+            <p style="font-size:16px;font-weight:600;letter-spacing:.5px;margin:0">brand@tangxinan-anan.example</p>
+          </div>
+          <p style="font-size:12.5px;opacity:.8;margin-top:14px;line-height:1.7">工作日 10:00–18:00 在线,投稿反馈通常在 7 个工作日内送达。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="tx-footer">
+  <div class="tx-wrap">
+    <div class="tx-footer-grid">
+      <div>
+        <div class="tx-footer-brand">
+          <span class="tx-logo-mark">糖安</span>
+          <strong>糖心安安老师</strong>
+        </div>
+        <p>糖心安安老师官方网站,由糖心文化传媒持续运营的原创影像品牌。深耕家庭陪伴垂直领域,以真实、温暖、有力量的内容连接创作者与用户,构建值得信赖的内容生态。</p>
+        <p style="margin-top:10px">官方网站 · 正版内容 · 高清呈现 · 用户至上</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#tx-focus">焦点内容</a></li>
+          <li><a href="#tx-stream">热门视频</a></li>
+          <li><a href="#tx-special">专题企划</a></li>
+          <li><a href="#tx-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌信息</h4>
+        <ul>
+          <li><a href="#tx-news">企业动态</a></li>
+          <li><a href="#tx-faq">帮助中心</a></li>
+          <li><a href="#tx-join">投稿与合作</a></li>
+          <li><a href="#tx-top">返回首页</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>内容合作:brand@tangxinan-anan.example</li>
+          <li>创作投稿:creator@tangxinan-anan.example</li>
+          <li>工作时间:周一至周五 10:00–18:00</li>
+          <li>办公地址:糖心文化传媒内容中心</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tx-footer-bottom">
+      <span>© 2026 糖心文化传媒 · 糖心安安老师官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或已获授权 · 未经许可禁止转载</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 弹窗 ===== -->
+<div class="tx-modal-mask" id="txModalMask" role="dialog" aria-modal="true" aria-labelledby="txModalTitle">
+  <div class="tx-modal">
+    <button class="tx-modal-close" type="button" id="txModalClose" aria-label="关闭弹窗">×</button>
+    <div id="txModalBody"></div>
+  </div>
+</div>
+
+<div class="tx-toast" id="txToast" role="status" aria-live="polite"></div>
+<button class="tx-top-btn" id="txTopBtn" type="button" aria-label="回到顶部">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航 ---------- */
+  var navToggle = document.getElementById('txNavToggle');
+  var nav = document.getElementById('txNav');
+  var search = document.getElementById('txSearch');
+  navToggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.textContent = open ? '×' : '☰';
+    if(!open){ search.classList.remove('is-shown'); }
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 820){
+      nav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded','false');
+      navToggle.textContent = '☰';
+    }
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('txSearchInput');
+  var searchBtn = document.getElementById('txSearchBtn');
+  var searchFb = document.getElementById('txSearchFeedback');
+  var searchPool = [
+    {k:'亲子', t:'《温柔的答案》第二季 · 把话说完'},
+    {k:'亲子', t:'四十七秒:孩子第一次系好鞋带'},
+    {k:'治愈', t:'雨天的午后:一个人在家可以做的事'},
+    {k:'治愈', t:'一杯热牛奶的仪式感'},
+    {k:'技巧', t:'收纳三步法:让家里多出两平米'},
+    {k:'访谈', t:'她说她不想当完美妈妈'},
+    {k:'美食', t:'外婆的手写菜谱:一道菜传了三代人'},
+    {k:'幕后', t:'一条十二分钟视频的诞生'}
+  ];
+  function doSearch(){
+    var kw = (searchInput.value || '').trim();
+    searchFb.classList.add('is-on');
+    if(!kw){
+      searchFb.textContent = '请输入关键词,例如“亲子”“收纳”“访谈”。';
+      searchInput.focus();
+      return;
+    }
+    var hits = searchPool.filter(function(item){
+      return item.k.indexOf(kw) > -1 || item.t.indexOf(kw) > -1;
+    });
+    if(hits.length){
+      searchFb.textContent = '找到 ' + hits.length + ' 条相关内容:'
+        + hits.slice(0,3).map(function(h){return '《' + h.t + '》';}).join('、')
+        + (hits.length > 3 ? ' 等' : '');
+      showToast('已为你匹配 ' + hits.length + ' 条内容');
+    }else{
+      searchFb.textContent = '暂未找到“' + kw + '”的精确结果,可尝试亲子、治愈、收纳、访谈等标签。';
+      showToast('暂无精确结果,已展示推荐标签');
+    }
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+  if(window.innerWidth <= 820){
+    navToggle.addEventListener('dblclick', function(){
+      search.classList.toggle('is-shown');
+      if(search.classList.contains('is-shown')){ searchInput.focus(); }
+    });
+  }
+
+  /* ---------- 标签筛选 ---------- */
+  var chips = document.querySelectorAll('[data-tx-filter]');
+  var streamCards = document.querySelectorAll('#txStreamGrid .tx-card');
+  Array.prototype.forEach.call(chips, function(chip){
+    chip.addEventListener('click', function(){
+      Array.prototype.forEach.call(chips, function(c){ c.classList.remove('is-active'); });
+      chip.classList.add('is-active');
+      var f = chip.getAttribute('data-tx-filter');
+      var shown = 0;
+      Array.prototype.forEach.call(streamCards, function(card){
+        var targets = card.getAttribute('data-tx-targets') || '';
+        var match = (f === 'all') || targets.indexOf(f) > -1;
+        card.style.display = match ? '' : 'none';
+        if(match){ shown++; }
+      });
+      showToast(f === 'all' ? '已显示全部 ' + shown + ' 部作品' : '筛选出 ' + shown + ' 部相关作品');
+    });
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  function bindToggle(selector, likeCls, tipOn, tipOff){
+    document.addEventListener('click', function(e){
+      var btn = e.target.closest(selector);
+      if(!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
+      var on = btn.classList.toggle(likeCls);
+      if(selector === '[data-tx-like]'){
+        var numEl = btn.querySelector('[data-tx-like-num]');
+        if(numEl){
+          var n = parseInt(numEl.textContent.replace(/,/g,''),10) || 0;
+          numEl.textContent = (on ? n + 1 : Math.max(0, n - 1)).toLocaleString('en-US');
+        }
+      }
+      showToast(on ? tipOn : tipOff);
+    }, true);
+  }
+  bindToggle('[data-tx-like]', 'is-liked', '感谢点赞,已记入你的偏好', '已取消点赞');
+  bindToggle('[data-tx-save]', 'is-saved', '已加入收藏夹', '已从收藏夹移除');
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-tx-count]');
+  function runCount(el){
+    var target = parseInt(el.getAttribute('data-tx-count'),10) || 0;
+    var start = null, dur = 1200;
+    function step(ts){
+      if(!start){ start = ts; }
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('en-US');
+      if(p < 1){ requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCount(en.target); io.unobserve(en.target); }
+      });
+    }, {threshold:.4});
+    Array.prototype.forEach.call(counters, function(c){ io.observe(c); });
+  }else{
+    Array.prototype.forEach.call(counters, function(c){ runCount(c); });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById('txToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 弹窗管理 ---------- */
+  var mask = document.getElementById('txModalMask');
+  var modalBody = document.getElementById('txModalBody');
+  var modalClose = document.getElementById('txModalClose');
+  var lastFocus = null;
+
+  var tpl = {
+    player: function(title){
+      return '<h3 id="txModalTitle">播放说明</h3>'
+        + '<p class="tx-sub">' + (title || '当前作品') + '</p>'
+        + '<p style="font-size:14px;color:#564449;line-height:1.9;margin-bottom:18px">该作品为首发精品内容,可在官方页面内以高清模式观看完整章节。播放支持进度记忆与章节跳转,建议在网络稳定环境下体验。若需收藏或分享,可使用卡片上的操作按钮。</p>'
+        + '<button class="tx-btn tx-btn-primary" type="button" data-tx-close>我知道了</button>';
+    },
+    share: function(){
+      return '<h3 id="txModalTitle">分享本页</h3>'
+        + '<p class="tx-sub">把糖心安安老师官网推荐给更多同好</p>'
+        + '<div class="tx-share-row">'
+        + '<button class="tx-share-item" type="button" data-tx-share="微信"><span>💬</span>微信</button>'
+        + '<button class="tx-share-item" type="button" data-tx-share="微博"><span>🔥</span>微博</button>'
+        + '<button class="tx-share-item" type="button" data-tx-share="QQ"><span>🐧</span>QQ</button>'
+        + '</div>'
+        + '<button class="tx-btn tx-btn-ghost" type="button" id="txCopyLink" style="width:100%;justify-content:center">复制页面链接</button>';
+    },
+    submit: function(){
+      return '<h3 id="txModalTitle">投稿 / 报名</h3>'
+        + '<p class="tx-sub">「冬日陪伴影像计划」正在报名,填写后 7 个工作日内反馈</p>'
+        + '<form id="txSubmitForm">'
+        + '<div class="tx-form-row"><label for="txName">昵称</label><input id="txName" type="text" placeholder="你希望被怎样称呼" required></div>'
+        + '<div class="tx-form-row"><label for="txContact">联系方式</label><input id="txContact" type="text" placeholder="邮箱或微信号" required></div>'
+        + '<div class="tx-form-row"><label for="txIdea">作品简介</label><textarea id="txIdea" placeholder="讲讲你想记录的人和事,以及为什么想拍下来" required></textarea></div>'
+        + '<button class="tx-btn tx-btn-primary" type="submit">提交报名</button>'
+        + '</form>';
+    },
+    contact: function(){
+      return '<h3 id="txModalTitle">联系品牌团队</h3>'
+        + '<p class="tx-sub">我们会在 5 个工作日内回复</p>'
+        + '<p style="font-size:14px;color:#564449;line-height:2;margin-bottom:18px">'
+        + '品牌合作:brand@tangxinan-anan.example<br>'
+        + '创作投稿:creator@tangxinan-anan.example<br>'
+        + '工作时间:周一至周五 10:00–18:00<br>'
+        + '办公地址:糖心文化传媒内容中心</p>'
+        + '<button class="tx-btn tx-btn-primary" type="button" id="txCopyMail">复制合作邮箱</button>';
+    },
+    creator: function(data){
+      var parts = (data || '').split('|');
+      var name = parts[0] || '创作者';
+      var field = parts[1] || '';
+      var works = parts[2] || '0';
+      var fans = parts[3] || '0';
+      var intro = parts[4] || '';
+      return '<h3 id="txModalTitle">' + name + '</h3>'
+        + '<p class="tx-sub">' + field + '</p>'
+        + '<p style="font-size:14px;color:#564449;line-height:1.9;margin-bottom:14px">' + intro + '</p>'
+        + '<p style="font-size:13.5px;color:#7d6a72;margin-bottom:18px">作品数 ' + works + ' · 关注数 ' + fans + '</p>'
+        + '<button class="tx-btn tx-btn-primary" type="button" data-tx-close>关闭简介</button>';
+    }
+  };
+
+  function openModal(html){
+    lastFocus = document.activeElement;
+    modalBody.innerHTML = html;
+    mask.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    modalClose.focus();
+  }
+  function closeModal(){
+    mask.classList.remove('is-open');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus){ lastFocus.focus(); }
+  }
+
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-tx-modal]');
+    if(trigger){
+      var type = trigger.getAttribute('data-tx-modal');
+      var title = trigger.getAttribute('data-tx-title') || '';
+      if(type === 'player'){
+        if(e.target.closest('[data-tx-like]') || e.target.closest('[data-tx-save]')){ return; }
+        openModal(tpl.player(title));
+      }else if(tpl[type]){
+        openModal(tpl[type]());
+      }
+    }
+    var creatorCard = e.target.closest('[data-tx-creator]');
+    if(creatorCard){
+      openModal(tpl.creator(creatorCard.getAttribute('data-tx-creator')));
+    }
+  });
+
+  modalClose.addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){
+    if(e.target === mask){ closeModal(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mask.classList.contains('is-open')){ closeModal(); }
+  });
+
+  /* ---------- 弹窗内动态交互 ---------- */
+  modalBody.addEventListener('click', function(e){
+    if(e.target.closest('[data-tx-close]')){ closeModal(); }
+    var shareBtn = e.target.closest('[data-tx-share]');
+    if(shareBtn){
+      var ch = shareBtn.getAttribute('data-tx-share');
+      showToast('已生成' + ch + '分享卡片,请前往对应应用粘贴');
+    }
+    if(e.target.closest('#txCopyLink')){
+      copyText('https://www.tangxinan-anan.example/tangxin-anan', '页面链接已复制,可直接粘贴分享');
+    }
+    if(e.target.closest('#txCopyMail')){
+      copyText('brand@tangxinan-anan.example', '合作邮箱已复制');
+    }
+  });
+
+  modalBody.addEventListener('submit', function(e){
+    if(e.target.id === 'txSubmitForm'){
+      e.preventDefault();
+      var name = (document.getElementById('txName').value || '').trim();
+      var contact = (document.getElementById('txContact').value || '').trim();
+      if(!name || !contact){
+        showToast('请补充昵称与联系方式');
+        return;
+      }
+      modalBody.innerHTML = '<h3 id="txModalTitle">提交成功</h3>'
+        + '<p class="tx-sub">感谢你的信任,' + name + '</p>'
+        + '<p style="font-size:14px;color:#564449;line-height:1.9;margin-bottom:18px">我们已收到你的报名信息,评审组会在 7 个工作日内通过你留下的联系方式与你沟通。请留意邮箱或消息提醒。</p>'
+        + '<button class="tx-btn tx-btn-primary" type="button" data-tx-close>好的</button>';
+      showToast('报名信息已提交');
+    }
+  });
+
+  function copyText(text, okMsg){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast(okMsg);
+      }).catch(function(){
+        fallbackCopy(text, okMsg);
+      });
+    }else{
+      fallbackCopy(text, okMsg);
+    }
+  }
+  function fallbackCopy(text, okMsg){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand('copy'); showToast(okMsg); }
+    catch(err){ showToast('复制失败,请手动选择文本'); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('txTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 620){ topBtn.classList.add('is-show'); }
+    else{ topBtn.classList.remove('is-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = document.querySelectorAll('.tx-nav a');
+  var sections = [];
+  Array.prototype.forEach.call(navLinks, function(link){
+    var id = link.getAttribute('href');
+    if(id && id.charAt(0) === '#' && id.length > 1){
+      var el = document.querySelector(id);
+      if(el){ sections.push({el:el, link:link}); }
+    }
+  });
+  if('IntersectionObserver' in window && sections.length){
+    var navIo = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          Array.prototype.forEach.call(navLinks, function(l){ l.classList.remove('is-active'); });
+          var matched = sections.filter(function(s){ return s.el === en.target; })[0];
+          if(matched){ matched.link.classList.add('is-active'); }
+        }
+      });
+    }, {rootMargin:'-140px 0px -55% 0px'});
+    sections.forEach(function(s){ navIo.observe(s.el); });
+  }
+})();
+</script>
+</body>
+  </html>
